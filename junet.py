@@ -1,5 +1,4 @@
 # cook your dish here
-#minimum number of operation required to convert one tuple to another
 def calculate():
     oper = []
     a = list(map(int, input().split()))
@@ -23,7 +22,9 @@ def calculate():
                 flag = flag + 1
                 for i in range(3):
                     if(a[i]!=b[i]):
-                        flag = flag + 1
+                        if(b[i]+c==a[i]):
+                            b[i]= b[i] + c
+                            flag = flag + 1
                 if(flag>0):
                     op = op + 1
                     flag = 0
@@ -33,7 +34,9 @@ def calculate():
                 flag = flag + 1
                 for i in range(3):
                     if(a[i]!=b[i]):
-                        flag = flag + 1
+                        if(a[i]+c==b[i]):
+                            a[i]= a[i] + c
+                            flag = flag + 1
                 if(flag>0):
                     op = op + 1
     for i in range(3):
@@ -168,4 +171,3 @@ for i in range(T):
     listf.append(p)
 for ele in listf:
     print(ele)
-    
