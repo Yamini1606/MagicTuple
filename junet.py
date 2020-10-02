@@ -23,9 +23,7 @@ def calculate():
                 flag = flag + 1
                 for i in range(3):
                     if(a[i]!=b[i]):
-                        if(b[i]+c==a[i]):
-                            b[i]= b[i] + c
-                            flag = flag + 1
+                        flag = flag + 1
                 if(flag>0):
                     op = op + 1
                     flag = 0
@@ -35,9 +33,7 @@ def calculate():
                 flag = flag + 1
                 for i in range(3):
                     if(a[i]!=b[i]):
-                        if(a[i]+c==b[i]):
-                            a[i]= a[i] + c
-                            flag = flag + 1
+                        flag = flag + 1
                 if(flag>0):
                     op = op + 1
     for i in range(3):
